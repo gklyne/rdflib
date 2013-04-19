@@ -590,6 +590,10 @@ class Literal(Identifier):
                     if _value is not None:
                         lexical_or_value = _value
 
+            else:
+                value = lexical_or_value
+
+
         else:
             value = lexical_or_value
             _value, _datatype = _castPythonToLiteral(lexical_or_value)
